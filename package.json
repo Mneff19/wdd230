@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Project for the WDD 230 class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webkit",
+    "css:watch": "node-sass src/main.scss build/main.css -w dist"
+  },
+  "author": "Matthew Neff",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "webkit": "^0.0.0"
+  }
+}
