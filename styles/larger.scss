@@ -1,0 +1,46 @@
+@media only screen and (min-width: 744px) {
+    .nav {
+        .contents {
+            flex-direction: row;
+            max-width: 100rem;
+            margin: auto;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100rem;
+        margin: auto;
+
+        .course_title {
+            flex-basis: 100%;
+        }
+
+        .card {
+            &.learning_activites {
+                flex-basis: 57.5%;
+
+                .text_contents {
+                    .list {
+                        .item {
+                            &:not(:last-child) {
+                                margin-bottom: 1rem;
+                            }
+
+                            .sub_text {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.information {
+                flex-basis: 37.5%;
+                margin-top: 0;
+            }
+        }
+    }
+}

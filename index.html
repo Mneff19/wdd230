@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 230 - Project</title>
+    <meta name="description" content="Matthew Neff course assignment portal for WDD 230 - Web Frontend Development">
+    <title>Matthew Neff - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="contents">
+            <img class="profile_picture" src="images/profile-image-of-matthew-neff.webp" alt="Profile picture of Matthew Neff" width="100" height="150">
+            <h1 class="name">Matthew Neff</h1>
+        </div>
+    </header>
+    <nav class="nav">
+        <div class="contents">
+            <a class="page_link" href="#">Home</a>
+            <a class="page_link" href="#">Chamber</a>
+            <a class="page_link" href="#">Site Plan</a>
+            <a class="page_link" href="#">Survey</a>
+        </div>
+    </nav>
+    <main class="main">
+        <h2 class="course_title">WDD 230: Web Frontend Development</h2>
+        
+        <section class="card learning_activites">
+            <h3 class="title">Learning Activities</h3>
+            <div class="text_contents">
+                <ul class="list">
+                    <li class="item">
+                        <span class="sub_text">Week 1:</span>
+                        <a class="sub_link" href="#">Layout</a>
+                        <span class="divider">|</span>
+                        <a class="sub_link" href="#">Media Query</a>
+                        <span class="divider">|</span>
+                        <a class="sub_link" href="#">JS Pen</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 2:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 3:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 4:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 5:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 6:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                    <li class="item">
+                        <span class="sub_text">Week 7:</span>
+                        <a class="sub_link">N/A</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="card information">
+            <h3 class="title">Information</h3>
+            <div class="text_contents">
+                <p class="text location">Paris, France</p>
+                <div class="weather">
+                    <img class="weather_icon" src="images/cloud.svg" alt="Cloud representing the weather" width="25" height="25">
+                    <span class="text weather_text">26°C, Cloudy</span>
+                </div>
+                <p class="text visit_count">Page Visits: 25k</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="text copyright">©<span id="year_container">2023</span> - Matthew Neff - USA</p>
+        <p class="text last_modified" id="lastModified">Last Modification: 04/20/2023 08:50:30</p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>
