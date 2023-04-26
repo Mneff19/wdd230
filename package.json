@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^8.0.0",
+    "normalize.css": "^8.0.1",
     "webkit": "^0.0.0"
   }
 }
