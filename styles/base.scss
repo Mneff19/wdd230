@@ -26,21 +26,32 @@
     .contents {
         display: flex;
         flex-direction: column;
-    }
+        list-style-type: none;
 
-    .page_link {
-        font-weight: 500;
-        font-size: 1.8rem;
-        text-align: center;
-        width: 100%;
-        padding: 1.6rem 2rem;
-        color: #d1d1d1;
-        text-decoration: none;
-        // border-bottom: 2px solid rgba(35, 73, 87, 1);
+        .item {
+            padding: 1.6rem 2rem;
+            width: 100%;
+        }
+
+        .page_link {
+            display: block;
+            font-weight: 500;
+            font-size: 1.8rem;
+            text-align: center;
+            margin: auto;
+            color: #d1d1d1;
+            text-decoration: none;
+            transition: color 300ms;
+
+            &.active,
+            &:hover {
+                color: white;
+            }
+        }
     }
 }
 
-.main {
+.s-home {
     padding: 0 2rem 3.2rem;
 
     .course_title {
@@ -48,10 +59,48 @@
     }
 
     .card {
-        border: 2px solid rgba(35, 73, 87, 1);
+        border: 0.2rem solid rgba(35, 73, 87, 1);
 
         .text_contents {
             padding-right: 2rem;
+        }
+
+        .title {
+            padding: 1.6rem;
+            margin: 0;
+            color: white;
+            background: rgba(35, 73, 87, 1);
+            background: linear-gradient(27deg, rgba(35, 73, 87, 1) 0%, rgba(18, 73, 93, 1) 100%);
+        }
+
+        &.learning_activites {
+            .list {
+                list-style-type: none;
+                padding-left: 3rem;
+
+                .item {
+                    font-weight: 500;
+
+                    &:not(:last-child) {
+                        margin-bottom: 1.6rem;
+                    }
+
+                    .sub_text {
+                        display: block;
+                        margin-bottom: 0.4rem;
+                    }
+
+                    .sub_link {
+                        color: rgba(35, 73, 87, 1);
+                        text-decoration: none;
+
+                        &:not([href]) {
+                            font-size: 1.2rem;
+                            color: black;
+                        }
+                    }
+                }
+            }
         }
 
         &.information {
@@ -73,42 +122,6 @@
 
                     .weather_icon {
                         margin-right: 0.8rem;
-                    }
-                }
-            }
-        }
-
-        .title {
-            padding: 1.6rem;
-            margin: 0;
-            color: white;
-            background: rgba(35, 73, 87, 1);
-            background: linear-gradient(27deg, rgba(35, 73, 87, 1) 0%, rgba(18, 73, 93, 1) 100%);
-        }
-
-        .list {
-            list-style-type: none;
-            padding-left: 3rem;
-
-            .item {
-                font-weight: 500;
-
-                &:not(:last-child) {
-                    margin-bottom: 1.6rem;
-                }
-
-                .sub_text {
-                    display: block;
-                    margin-bottom: 0.4rem;
-                }
-
-                .sub_link {
-                    color: rgba(35, 73, 87, 1);
-                    text-decoration: none;
-
-                    &:not([href]) {
-                        font-size: 1.2rem;
-                        color: black;
                     }
                 }
             }
