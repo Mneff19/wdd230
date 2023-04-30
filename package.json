@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webkit",
-    "css:watch": "node-sass styles/main.scss styles/main.css -w dist"
+    "css:watch": "node-sass --output-style compressed styles/main.scss styles/main.css -w dist",
+    "css:watch-lessons": "node-sass --output-style compressed lessons/lesson1/styles/ -o lessons/lesson1/styles/ -w dist"
   },
   "author": "Matthew Neff",
   "license": "ISC",
