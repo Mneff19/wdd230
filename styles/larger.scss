@@ -1,7 +1,13 @@
 @media only screen and (min-width: 744px) {
     .nav {
+        .mobile-toggle {
+            display: none;
+        }
+
         .contents {
             flex-direction: row;
+            opacity: 1;
+            height: fit-content;
             max-width: 100rem;
             margin: auto;
         }
