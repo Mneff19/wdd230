@@ -8,7 +8,7 @@
     <meta name="author" content="Matthew Neff">
     <meta property="og:title" content="Mock Tooele Chamber of Commerce Homepage - WDD 230">
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvftre8_JRIE9VVHiOs58K52hzoSsnZkCnrbhTYjrfJ4flCCYkYhXaeFBIvuq9nUW9iXyhA3w59g&usqp=CAU&ec=48665701">
+    <meta property="og:image" content="https://sp-images.summitpost.org/346558.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=0b24315d66e4d7c5ae9aea51c6e8abb2">
     <meta property="og:url" content="https://mneff19.github.io/wdd230/chamber/index.html">
     <title>Tooele Chamber of Commerce [MOCK]</title>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -18,28 +18,155 @@
 </head>
 <body>
     <header class="header">
-        <div class="contents">
-            <img class="profile_picture" src="images/profile-image-of-matthew-neff-small.webp" alt="Profile picture of Matthew Neff" width="100" height="150">
-            <h1 class="name">Matthew Neff</h1>
+        <div class="wrapper">
+            <a href="https://mneff19.github.io/wdd230/chamber" class="logo o-gradient">Tooele Chamber</a>
+            <nav class="nav">
+                <button class="mobile-toggle" id="mobile-toggle">
+                    <img class="icon active" src="images/hamburger.svg" alt="Icon to open the mobile menu" width="52" height="52">
+                    <img class="icon " src="images/close.svg" alt="Icon to close the mobile menu" width="52" height="52">
+                </button>
+                <ul class="contents">
+                    <div class="left">
+                        <li class="item"><a class="page_link active" href="https://mneff19.github.io/wdd230/chamber">Home</a></li>
+                        <li class="item"><a class="page_link" href="https://mneff19.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                        <li class="item"><a class="page_link" href="https://mneff19.github.io/wdd230/chamber/about.html">About</a></li>
+                    </div>
+                    <div class="right">
+                        <li class="item"><a class="page_link c-cta" href="https://mneff19.github.io/wdd230/chamber/join-now.html">Join Now</a></li>
+                    </div>
+                </ul>
+            </nav>
         </div>
-        <nav class="nav">
-            <button class="mobile-toggle" id="mobile-toggle">
-                <img class="icon active" src="images/hamburger.svg" alt="Icon to open the mobile menu" width="52" height="52">
-                <img class="icon " src="images/close.svg" alt="Icon to close the mobile menu" width="52" height="52">
-            </button>
-            <ul class="contents">
-                <li class="item"><a class="page_link active" href="/">Home</a></li>
-                <li class="item"><a class="page_link" href="#">Chamber</a></li>
-                <li class="item"><a class="page_link" href="https://mneff19.github.io/wdd230/lessons/lesson1/chamber-site-plan.html">Site Plan</a></li>
-                <li class="item"><a class="page_link" href="#">Survey</a></li>
-            </ul>
-        </nav>
     </header>
+    <div class="header-spacer"></div>
     <main class="s-chamber">
-        
+        <section class="hero">
+            <div class="top">
+                <div class="wrapper">
+                    <h1 class="headline o-gradient">Tooele Valley<br>Chamber of<br>Commerce</h1>
+                    <p class="desc">Bringing together our community for an even better economy</p>
+                    <a href="https://mneff19.github.io/wdd230/chamber/join-now.html" class="c-cta">Join Now</a>       
+                </div>   
+                <artcile class="weather">
+                    <p class="temp">70°F</p>
+                    <p class="condition">Sunny</p>
+                </artcile>
+            </div>
+            <div class="bottom">
+                <ul class="cities-list">
+                    <li class="city-item">
+                        <img src="images/tooele-city-logo.svg" alt="Logo of the city of Tooele" width="52" height="52">
+                        <p class="city">Tooele</p>
+                    </li>
+                    <li class="city-item">
+                        <img src="images/stansbury-city-logo.svg" alt="Logo of the city of Stansbury" width="52" height="52">
+                        <p class="city">Stansbury</p>
+                    </li>
+                    <li class="city-item">
+                        <img src="images/grantsville-city-logo.svg" alt="Logo of the city of Grantville" width="52" height="52">
+                        <p class="city">Grantsville</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="events">
+            <h2 class="title">A look into our amazing community events</h2>
+            <div class="events-slider">
+                <ul class="events-list">
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/300/300" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/301/301" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/302/302" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/303/303" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/304/304" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                    <li class="events-item">
+                        <a href="#" class="link">
+                            <img src="https://picsum.photos/305/305" alt="Photo of a local event" width="300" height="300">
+                            <p class="event-name">Lorem ipsum dolor sit.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="spotlights">
+            <ul class="spotlight-list">
+                <li class="spotlight-item">
+                    <h3 class="body">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consequuntur quidem impedit aliquam architecto suscipit doloremque tenetur, beatae eveniet nesciunt."</h3>
+                    <div class="bottom">
+                        <p class="source">Melanie's Health and Nutrition</p>
+                        <a href="https://melanieshealth.com/"><img src="images/melanies-health-and-nutrition-logo.webp" class="logo" alt="Logo of Melanie's Health and Nutirion, a local company" width="100" height="37.6"></a>
+                    </div>
+                </li>
+                <li class="spotlight-item">
+                    <h3 class="body">"Maxime nemo accusamus exercitationem error laborum quas animi eum, unde eos quis eaque odit aliquid ut nam! Sequi, modi cum?"</h3>
+                    <div class="bottom">
+                        <p class="source">Barkingham Palace</p>
+                        <a href="https://www.facebook.com/profile.php?id=100063575263508"><img src="images/barkingham-palace-logo.webp" class="logo" alt="Logo of Barkingham Palace, a local company" width="39" height="37.6"></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <secion class="pre-footer">
+            <h2 class="title">Ready to join this great community?</h2>
+            <a href="https://mneff19.github.io/wdd230/chamber/join-now.html" class="c-cta">Join now</a>
+        </secion>
     </main>
-    <footer>
-
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <img class="chamber_logo" src="images/tooele-valley-chamber-of-commerce-logo.webp" alt="Logo of the Tooele Chmber of Commerce" width="250" height="49">
+                <div class="contact-group"><a href="mailto:tooelechamber@mailinator.com" class="link"><img src="images/email-now-icon.svg" class="logo" alt="Email now icon" width="24" height="24"><span>chamber@tooelevalley.com</span></a></div>
+                <div class="contact-group"><a href="tel:3332221111" class="link"><img src="images/call-now-phone.svg" class="logo" alt="Call now icon" width="24" height="24"><span>(333) 222-1111</span></a></div>
+            </div>
+            <ul class="footer-links">
+                <li class="footer-link heading">
+                    <h2 class="title">Community</h2>
+                </li>
+                <li class="footer-link"><a href="#" class="link">Events</a></li>
+                <li class="footer-link"><a href="#" class="link">Gallery</a></li>
+                <li class="footer-link"><a href="#" class="link">Newsletter</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li class="footer-link heading">
+                    <h2 class="title">Schools</h2>
+                </li>
+                <li class="footer-link"><a href="https://tooelehigh.tooeleschools.org/" class="link">Tooele High</a></li>
+                <li class="footer-link"><a href="https://stansburyhigh.tooeleschools.org/" class="link">Stansbury High</a></li>
+                <li class="footer-link"><a href="https://grantsvillehigh.tooeleschools.org/" class="link">Grantsville High</a></li>
+            </ul>
+            <ul class="footer-links">
+                <li class="footer-link heading">
+                    <h2 class="title">Resources</h2>
+                </li>
+                <li class="footer-link"><a href="#" class="link">List of Business</a></li>
+                <li class="footer-link"><a href="#" class="link">About Us</a></li>
+                <li class="footer-link"><a href="#" class="link">Join Now</a></li>
+            </ul>
+        </div>
     </footer>
     <script src="scripts/chamber.js"></script>
 </body>

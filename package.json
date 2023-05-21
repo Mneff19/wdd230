@@ -13,6 +13,7 @@
   "author": "Matthew Neff",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.2",
     "node-sass": "^8.0.0",
     "normalize.css": "^8.0.1",
     "webkit": "^0.0.0"
