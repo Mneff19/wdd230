@@ -90,9 +90,40 @@
     padding: 0 2rem 3.2rem;
     position: relative;
 
-    .course_title {
-        padding: 4rem 5.2rem 4rem 0;
-        margin: 0 0 4rem;
+    .hero-img {
+        position: relative;
+
+        .img {
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 1.6rem;
+            left: 1.6rem;
+            background-color: #0F0F0F;
+            padding: 1.6rem;
+            border-radius: 0.6rem;
+
+            .text {
+                font-weight: 600;
+                font-size: 1.4rem;
+                line-height: 1;
+                font-style: italic;
+                color: #f9f9f9;
+            }
+        }
+    }
+
+    .top {
+        position: relative;
+        width: 100%;
+
+        .course_title {
+            padding: 4rem 5.2rem 4rem 0;
+            margin: 0 0 4rem;
+        }
     }
 
     .theme-toggle {
@@ -180,6 +211,14 @@
             }
         }
     }
+}
+
+.maps-embed {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5.6rem;
 }
 
 body.t-dark {

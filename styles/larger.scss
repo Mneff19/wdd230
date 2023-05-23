@@ -24,8 +24,23 @@
         max-width: 100rem;
         margin: auto;
 
-        .course_title {
-            flex-basis: 100%;
+        .hero-img {
+            .overlay {
+                position: absolute;
+                top: 2.4rem;
+                left: 2.4rem;
+                background-color: #0F0F0F;
+                padding: 2.4rem;
+                border-radius: 0.6rem;
+
+                .text {
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 1;
+                    font-style: italic;
+                    color: #f9f9f9;
+                }
+            }
         }
 
         .card {
