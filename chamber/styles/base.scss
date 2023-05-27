@@ -36,6 +36,7 @@ $navHeight: 5.2rem;
     width: 100vw;
     background-color: $primaryBlack;
     min-height: $navHeight;
+    z-index: 1;
 
     @include desktop {
         padding: 0 2.4rem;
@@ -413,10 +414,83 @@ $navHeight: 5.2rem;
     }
 }
 
+.s-discover {
+    padding-bottom: 8rem;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: minmax(16.5rem, 30rem) auto;
+        justify-content: center;
+    }
+
+    .sidebar {
+        @include desktop {
+            padding: 0 2.4rem;
+        }
+
+        .cards {
+            max-width: 30rem;
+            margin: 0 auto 4rem;
+            padding: 0;
+            list-style-type: none;
+        }
+    }
+
+    .images {
+        @include desktop {
+            padding-right: 2.4rem;
+        }
+
+        .img-wrapper {
+            width: fit-content;
+            margin: auto;
+
+            @include desktop {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                width: 100%;
+
+                &:hover {
+                    .picture {
+                        .img {
+                            transform: scale(1.3);
+                            z-index: -1;
+                        }
+                    }
+                }
+
+                .picture {
+                    .img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 4rem;
+            }
+
+            .picture {
+                .img {
+                    display: block;
+                    transition: transform 300ms;
+                }
+            }
+        }
+    }
+}
+
 .footer {
     background: $primaryBlack;
     color: $primaryWhite;
     padding: 0 2.4rem 4.8rem;
+
+    &.discover {
+        padding-top: 5.6rem;
+    }
 
     .wrapper {
         @include desktop {
