@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Barkingham Palace",
+        "address": "196 N Broadway St",
+        "phone": "435-249-0626",
+        "website": "https://www.facebook.com/p/Barkingham-Palace-100063575263508/",
+        "img": "https://mneff19.github.io/wdd230/chamber/images/barkingham-palace-logo.webp",
+        "membership_level": "basic",
+        "membership_tenure": "13"
+    },
+    {
+        "name": "Bears Ears Child & Family Therapy",
+        "address": "1244 N Main St",
+        "phone": "435-882-4354",
+        "website": "https://bearsearstherapy.net/",
+        "img": "https://bearsearstherapy.net/images/bearsearslogo.png",
+        "membership_level": "pro",
+        "membership_tenure": "49"
+    },
+    {
+        "name": "Melanie's Health & Nutrition",
+        "address": "768 N Main St",
+        "phone": "435-249-0464",
+        "website": "https://melanieshealth.com/",
+        "img": "https://cdn.shopify.com/s/files/1/0623/1022/0028/files/Logo.jpg?v=1643227048",
+        "membership_level": "basic",
+        "membership_tenure": "5"
+    },
+    {
+        "name": "Tate Mortuary",
+        "address": "110 S Main St",
+        "phone": "435-882-0676",
+        "website": "http://tatemortuary.com",
+        "img": "https://tatemortuary.com/wp-content/uploads/sites/22/logo_Tate-Mortuary@2x.png",
+        "membership_level": "pro",
+        "membership_tenure": "71"
+    },
+    {
+        "name": "Bella Nails",
+        "address": "500 E Village Blvd Ste 105",
+        "phone": "435-882-4610",
+        "website": "https://www.bellanails.net/",
+        "img": "https://images.squarespace-cdn.com/content/v1/6413bb4991ffc204478324a7/347c913a-c3c5-475a-919e-f3deaccea5d5/Bella+Nails+LOGO.png?format=1500w",
+        "membership_level": "basic",
+        "membership_tenure": "26"
+    },
+    {
+        "name": "Gentry Finance",
+        "address": "1200 N Main St",
+        "phone": "435-843-8680",
+        "website": "https://www.gentryfinance.net/",
+        "img": "https://gentryfinance.com/wp-content/uploads/2012/11/gentry.jpg",
+        "membership_level": "basic",
+        "membership_tenure": "63"
+    },
+    {
+        "name": "Kirk Hotel & Apartment",
+        "address": "57 W Vine St",
+        "phone": "435-255-2341",
+        "website": "https://www.thekirkapts.com/",
+        "img": "https://assets.marketapts.com/assets/converted/KIRK/assets/imagefroms3/KIRK/images/modern/KIRK/logo/logo.png.webp",
+        "membership_level": "pro",
+        "membership_tenure": "117"
+    }
+]

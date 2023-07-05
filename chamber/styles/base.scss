@@ -132,7 +132,7 @@ $navHeight: 5.2rem;
             }
 
             .item {
-                padding: 1.6rem 2rem;
+                padding: 1.6rem 1rem;
                 min-height: $navHeight;
                 width: 100%;
             }
@@ -162,7 +162,10 @@ $navHeight: 5.2rem;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    padding-left: calc(clamp(0.379rem, 50vw + -36.82099999999999rem, 25.579rem)); //Between 744px and 1248px
+                    // Measurements for added button:
+                    // 56.415px
+                    // 5.6415rem
+                    padding-left: calc(clamp(0.43099999999999994rem, 45.44444444444444vw + -33.379666666666665rem, 23.335rem)); //Between 744px and 1248px
                 }
             }
 
@@ -478,6 +481,108 @@ $navHeight: 5.2rem;
                     display: block;
                     transition: transform 300ms;
                 }
+            }
+        }
+    }
+}
+
+.s-directory {
+    padding: 4rem 2.4rem;
+
+    .view-toggles {
+        text-align: center;
+        margin-bottom: 2.4rem;
+
+        .view-toggle {
+            &.active {
+                background: lightgray;
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 0.8rem;
+            }
+        }
+    }
+
+    .member-list {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @media only screen and (min-width: 1200px) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-gap: 2.4rem;
+            max-width: 125rem;
+            margin: auto;
+        }
+
+        &.list-view {
+            @media only screen and (min-width: 1200px) {
+                display: block;
+            }
+
+            .member-list-item {
+                text-align: left;
+                border-radius: 0;
+
+                @media only screen and (min-width: 1200px) {
+                    display: grid;
+                    grid-template-columns: repeat(4, minmax(0, 25rem));
+                    width: fit-content;
+                    max-width: unset;
+                }
+
+                .logo {
+                    display: none;
+                }
+
+                .name {
+                    font-size: 1.8rem;
+                    margin-top: 0;
+                }
+
+                &:nth-child(even) {
+                    background-color: #ebcdf4;
+                }
+
+                &:not(:last-of-type) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .member-list-item {
+            background-color: #c1c1c1;
+            text-align: center;
+            word-wrap: break-word;
+            width: 100%;
+            max-width: 50rem;
+            padding: 2.4rem 1.6rem;
+            border-radius: 0.6rem;
+            margin: auto;
+
+            @media only screen and (min-width: 1200px) {
+                height: 100%;
+            }
+
+            .name {
+                margin-bottom: 1.2rem;
+            }
+
+            .address {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .phone {
+                margin-top: 0;
+                ;
+            }
+
+            &:not(:last-of-type) {
+                margin-bottom: 2.4rem;
             }
         }
     }
