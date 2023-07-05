@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+    <meta name="author" content="John Doe">
+    <meta name="description" content="Fill Me In">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="GET" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top" for="fname">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top" for="lname">Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label class="top" for="phone">Phone <input type="tel" name="phone" id="phone" placeholder="1235551234"></label>
+                <label class="top" for="email">Email* <input type="email" name="email" id="email" required placeholder="someone@gmail.com"></label>
+                <label class="top" for="url">Website* <input type="url" name="url" id="url" required placeholder="http://"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Course Information</legend>
+
+                <div>Audience</div>
+                <label class="sbs" for="beginner"><input type="radio" name="audience" id="beginner"> Beginner</label>
+                <label class="sbs" for="intermediate"><input type="radio" name="audience" id="intermediate"> Intermediate</label>
+                <label class="sbs" for="advanced"><input type="radio" name="audience" id="advanced"> Advanced</label>
+
+                <div>Software Needed</div>
+                <label class="sbs" for="code"><input type="checkbox" name="code" id="code" value="yes"> Coding</label>
+                <label class="sbs" for="client"><input type="checkbox" name="client" id="client" value="yes"> FTP Client</label>
+                <label class="sbs" for="editing"><input type="checkbox" name="editing" id="editing" value="yes"> Photo Editing</label>
+                <label class="sbs" for="process"><input type="checkbox" name="process" id="process" value="yes"> Preprocessor</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Funding</legend>
+                <label class="top" for="completed-date">Anticipated Completion Date <input type="date" name="completed-date" id="compelted-date"></label>
+                <label class="top" for="subject">Course Subject
+                    <select name="subject" id="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="english">English</option>
+                        <option value="history">History</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="software">Software Engineering</option>
+                    </select>
+                </label>
+                <label class="top" for="authors">How Many Authors <input type="number" name="authors" id="authors"></label>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Propose My Course">
+        </form>
+    </main>
+
+
+    <footer>
+        &copy; &bull; Paul Cheney &bull; 123-555-6789
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
