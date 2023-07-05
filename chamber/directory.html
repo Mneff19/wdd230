@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mock Tooele Chamber of Commerce dicover page for WDD 230 - Web Frontend Development">
+    <meta name="description" content="Mock Tooele Chamber of Commerce homepage for WDD 230 - Web Frontend Development">
     <meta name="author" content="Matthew Neff">
-    <meta property="og:title" content="Mock Tooele Chamber of Commerce Discover Page - WDD 230">
+    <meta property="og:title" content="Mock Tooele Chamber of Commerce Homepage - WDD 230">
     <meta property="og:type" content="website" />
     <meta property="og:image" content="https://sp-images.summitpost.org/346558.jpg?auto=format&fit=max&h=800&ixlib=php-2.1.1&q=35&s=0b24315d66e4d7c5ae9aea51c6e8abb2">
-    <meta property="og:url" content="https://mneff19.github.io/wdd230/chamber/discover.html">
-    <title>Tooele Chamber of Commerce [MOCK] - Discover</title>
+    <meta property="og:url" content="https://mneff19.github.io/wdd230/chamber/index.html">
+    <title>Tooele Chamber of Commerce [MOCK]</title>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"></noscript>
     <link rel="stylesheet" href="styles/main.css">
@@ -40,63 +40,13 @@
         </div>
     </header>
     <div class="header-spacer"></div>
-    <main class="s-discover">
-        <aside class="sidebar">
-            <ul class="cards">
-                <li class="card">
-                    <h2 class="title">Population</h2>
-                    <p class="desc">76,640</p>
-                </li>
-                <li class="card">
-                    <h2 class="title">Last Visit</h2>
-                    <p class="desc" id="last_visit">Looks like this is your first time, welcome! Let us know if you have any questions.</p>
-                </li>
-                <li class="card">
-                    <h2 class="title">Tooele News</h2>
-                    <p class="desc">Barkingham Palace, a local dog grooming business, received the Utah 2023 best pet groomer award!</p>
-                </li>
-            </ul>
-        </aside>
-        <section class="images">
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/welcome-to-tooele-sign.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/welcome-to-tooele-sign-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/tooele-county-courthouse-old.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/tooele-county-courthouse-old-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/tooele-county-ritz-theater.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/tooele-county-ritz-theater-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/tooele-county-welcome-sign.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/tooele-county-welcome-sign-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/tooele-county-train-museum.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/tooele-county-train-museum-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-            <div class="img-wrapper">
-                <picture class="picture">
-                    <source media="(min-width: 744px)" srcset="images/tooele-valley-canyon-outlook.webp" width="650" height="650">
-                    <img class="img" loading="lazy" src="images/tooele-valley-canyon-outlook-small.webp" alt="The Gilbert Arizona Temple" width="300" height="300">
-                </picture>
-            </div>
-        </section>
+    <main class="s-directory" id="directoryMain">
+        <div class="view-toggles">
+            <button class="view-toggle active" id="viewToggleGrid">Grid</button>
+            <button class="view-toggle" id="viewToggleList">List</button>
+        </div>
     </main>
-    <footer class="footer discover">
+    <footer class="footer">
         <div class="wrapper">
             <div class="left">
                 <img class="chamber_logo" src="images/tooele-valley-chamber-of-commerce-logo.webp" alt="Logo of the Tooele Chmber of Commerce" width="250" height="49">
@@ -129,6 +79,6 @@
             </ul>
         </div>
     </footer>
-    <script src="scripts/discover.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>
