@@ -8,7 +8,7 @@ async function getJSONData(url) {
     const data = await response.json();
     buildDirectory(data);
 }
-const members = getJSONData("http://127.0.0.1:5500/chamber/data/members.json");
+const members = getJSONData("https://mneff19.github.io/wdd230/chamber/data/members.json");
 
 mobileToggle.addEventListener("click", () => {
     mobileToggle.querySelectorAll(".icon").forEach((icon) => {
