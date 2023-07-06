@@ -37,37 +37,13 @@
         </ul>
     </nav>
     <main class="s-form">
-        <h1 class="title">Create an Account</h1>
-        <form method="get" action="record.html" class="survey-form">
-            <label for="username">Username* <input type="text" id="username" name="username" required></label>
-            <label for="password">Password* <input type="password" id="password" name="password" pattern="[a-zA-Z]{8,}" required></label>
-            <label for="confirmPassword">Confirm Password* <input type="password" id="confirmPassword" name="confirmPassword" required></label> 
-            <label for="email">Email* <input type="email" id="email" name="email" required></label>
-            <label for="rating">
-                Page Rating
-                <input type="range" min="1" max="10" step="1" id="rating" name="rating" list="ratingvalues" required>
-                <datalist id="ratingvalues">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </label>
-            <input type="submit" id="submit" name="submit" value="Create Account">
-        </form>
+        <h1 class="title">Account creation successful!</h1>
     </main>
     <footer class="footer">
         <p class="text copyright">©<span id="year_container">2023</span> - Matthew Neff - USA</p>
         <p class="text last_modified" id="lastModified">Last Modification: 04/20/2023 08:50:30</p>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/form.js"></script>
     <script src="scripts/getDates.js"></script>
 </body>
 </html>
