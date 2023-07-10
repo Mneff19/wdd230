@@ -5,7 +5,7 @@ const clampsToCalc = [
         viewportMin: 744,
         viewportMax: 1248,
         vals: [
-            { min: 4.31, max: 233.35 }
+            { min: 11.06, max: 240.1 }
         ]
     }
 ]
