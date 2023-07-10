@@ -585,6 +585,94 @@ $navHeight: 5.2rem;
     }
 }
 
+.s-join {
+    --form-font-size: 1.8rem;
+    --submit-button-color: rgb(33, 39, 60);
+    --field-border-radius: 0.6rem;
+
+    .title {
+        text-align: center;
+    }
+
+    .survey-form {
+        max-width: 50rem;
+        padding: 2.4rem;
+        margin: 0 auto 4.8rem;
+
+        fieldset {
+            padding-top: 2.4rem;
+            margin-bottom: 2.4rem;
+
+            legend {
+                font-weight: 600;
+                font-size: 1.8rem;
+            }
+        }
+
+        label {
+            display: block;
+            font-size: var(--form-font-size);
+            margin-bottom: 2.4rem;
+
+            &.flex {
+                display: flex;
+
+                input {
+                    width: fit-content;
+                    margin-right: 1rem;
+                }
+            }
+
+            input,
+            textarea {
+                display: block;
+                width: 100%;
+                padding: 1.6rem;
+                border-radius: var(--field-border-radius);
+            }
+
+            textarea {
+                resize: vertical;
+            }
+        }
+
+        datalist {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.8rem 0 1.6rem;
+
+            option {
+                display: block;
+                color: black;
+            }
+        }
+
+        input[type="submit"] {
+            background-color: var(--submit-button-color);
+            font-size: var(--form-font-size);
+            font-weight: 600;
+            color: white;
+            border: none;
+            border-radius: var(--field-border-radius);
+            padding: 2rem;
+        }
+    }
+}
+
+.s-thank-you {
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+
+    h1,
+    p {
+        text-align: center;
+    }
+}
+
 .footer {
     background: $primaryBlack;
     color: $primaryWhite;
