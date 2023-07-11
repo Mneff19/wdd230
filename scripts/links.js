@@ -5,7 +5,7 @@ const linksHolder = document.querySelector("#linksHolder");
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
+    buildLinks(data);
 }
 
 const buildLinks = links => {
@@ -18,7 +18,7 @@ const buildLinks = links => {
 
         const weekSpan = document.createElement("span");
         weekSpan.classList.add("sub_text");
-        weekSpan.textContent = week;
+        weekSpan.textContent = week + ":";
         li.appendChild(weekSpan);
 
         Object.keys(links[week]).forEach((linkName, i, arr) => {

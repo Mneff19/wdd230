@@ -177,10 +177,10 @@
                     .sub_link {
                         color: rgba(35, 73, 87, 1);
                         text-decoration: none;
+                        margin-left: 0.4rem;
 
-                        &:not([href]) {
-                            font-size: 1.2rem;
-                            color: black;
+                        &:not(:last-of-type) {
+                            margin-right: 0.4rem;
                         }
                     }
                 }
