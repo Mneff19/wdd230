@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webkit",
     "css:watch": "node-sass --output-style compressed styles -o styles -w dist",
-    "css:watch-lesson": "node-sass --output-style compressed lessons/lesson4/styles/ -o lessons/lesson4/styles/ -w dist",
+    "css:watch-lesson": "node-sass --output-style compressed lessons/lesson5/styles/ -o lessons/lesson5/styles/ -w dist",
     "css:watch-chamber": "node-sass --output-style compressed chamber/styles/ -o chamber/styles/ -w dist"
   },
   "author": "Matthew Neff",
