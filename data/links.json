@@ -1,0 +1,30 @@
+{
+    "Week 1": {
+        "Layout": "https://mneff19.github.io/wdd230/lessons/lesson1/holygrail.html",
+        "Media Query": "https://mneff19.github.io/wdd230/lessons/lesson1/media-queries.html",
+        "JS Pen": "https://codepen.io/MattheoNeff/pen/RweVprX?editors=1010"
+    },
+    "Week 2": {
+        "Design Principles": "https://mneff19.github.io/wdd230/lessons/lesson2/design.html",
+        "Hamburger": "https://codepen.io/MattheoNeff/pen/QWZqeey",
+        "Scriptures": "https://mneff19.github.io/wdd230/lessons/lesson2/bom.html"
+    },
+    "Week 3": {
+        "WebP": "https://mneff19.github.io/wdd230/lessons/lesson3/images/landscape.webp",
+        "Lazy Load": "https://mneff19.github.io/wdd230/lessons/lesson3/lazyload.html",
+        "Responsive Images": "https://mneff19.github.io/wdd230/lessons/lesson3/responsive-images.html",
+        "Local Storage": "https://mneff19.github.io/wdd230/lessons/lesson3/bom.html"
+    },
+    "Week 4": {
+        "Pseudo Selectors": "https://codepen.io/MatthewNeff/pen/BaqEmwB",
+        "CSS Combinations": "https://mneff19.github.io/wdd230/lessons/lesson4/images/css-combination-activity-completion-screenshot.webp",
+        "Table": "https://mneff19.github.io/wdd230/lessons/lesson4/tablebuild.html",
+        "Form": "https://mneff19.github.io/wdd230/lessons/lesson4/form-start/"
+    },
+    "Week 5": {
+        "Prophets": "https://mneff19.github.io/wdd230/lessons/lesson5/prophets.html",
+        "Pseudo Elements": "https://codepen.io/MattheoNeff/pen/rNQpLXj",
+        "JSON": "https://mneff19.github.io/wdd230/lessons/lesson5/new-ward-members.json",
+        "Weather": "https://mneff19.github.io/wdd230/lessons/lesson5/weather.html"
+    }
+}

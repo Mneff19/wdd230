@@ -1,0 +1,23 @@
+{
+    "familyName": "Smith",
+    "movedInDate": "6/17/2023",
+    "numInFamily": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Samantha",
+            "gender": "F",
+            "birthdate": "4/7/1981"
+        },
+        {
+            "name": "Johnny",
+            "gender": "M",
+            "birthdate": "8/28/1983"
+        },
+        {
+            "name": "Ammon",
+            "gender": "M",
+            "birthdate": "6/7/2023"
+        }
+    ]
+}
