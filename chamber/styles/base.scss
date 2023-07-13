@@ -248,18 +248,58 @@ $navHeight: 5.2rem;
             .weather {
                 background-color: rgba(10, 9, 12, 0.6);
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 padding: 1.6rem 2.4rem;
                 margin-top: 8rem;
 
-                p {
-                    margin-top: 0;
-                    margin-bottom: 0;
+                .current {
+                    display: flex;
+
+                    p {
+                        font-weight: 600;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .temp {
+                        font-weight: 600;
+                        margin-left: 0.8rem;
+                        margin-right: 0.8rem;
+                    }
                 }
 
-                .temp {
-                    margin-left: 0.8rem;
-                    margin-right: 0.8rem;
+                .forecast {
+                    .days {
+                        list-style-type: none;
+                        display: flex;
+                        text-align: center;
+                        margin: 2.4rem 0 0;
+                        padding: 0;
+                        gap: 5.6rem;
+
+                        .day {
+                            .info {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 0.8rem;
+
+                                .temp {
+                                    margin: 0 0.6rem 0 0;
+                                }
+
+                                .condition {
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .weekday {
+                            font-weight: 600;
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
