@@ -718,10 +718,6 @@ $navHeight: 5.2rem;
     color: $primaryWhite;
     padding: 2.4rem 2.4rem 4.8rem;
 
-    &.discover {
-        padding-top: 5.6rem;
-    }
-
     .wrapper {
         @include desktop {
             display: grid;
