@@ -3,7 +3,10 @@ const weatherTemp = document.querySelector("#weatherTemp");
 const weatherDescription = document.querySelector("#weatherDescription");
 const forecast = document.querySelector("#forecast");
 const spotlightHolder = document.querySelector("#spotlightHolder");
+const meetAndGreetBanner = document.querySelector("#meetAndGreetBanner");
 
+const todayWeekday = new Date().toLocaleDateString("en-US", { weekday: "short" });
+const daysToShowBanner = ["Mon", "Tue", "Wed"];
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.53183096915482&lon=-112.30080357417363&appid=84fd1805bbdfc8774858391be52c31e4&units=imperial';
 
 async function apiFetch() {
@@ -59,7 +62,7 @@ function displayResults(data) {
     forecast.appendChild(ul);
 }
 
-// apiFetch();
+apiFetch();
 
 async function getJSONData(url) {
     const response = await fetch(url);
@@ -74,7 +77,6 @@ function populateSpotlight(data) {
 
     let paidMembers = []
     for (let member in data) {
-        console.log(data[member].name + " membership_level is " + data[member].membership_level);
         if (data[member].membership_level != "basic") {
             paidMembers.push(member);
         }
@@ -112,3 +114,13 @@ mobileToggle.addEventListener("click", () => {
     });
     mobileToggle.parentElement.querySelector(".contents").classList.toggle("open");
 });
+
+if (daysToShowBanner.includes(todayWeekday)) {
+    setTimeout(() => {
+        meetAndGreetBanner.classList.add("open")
+    }, 2000);
+
+    meetAndGreetBanner.querySelector("#bannerClose").addEventListener("click", () => {
+        meetAndGreetBanner.classList.remove("open");
+    });
+}

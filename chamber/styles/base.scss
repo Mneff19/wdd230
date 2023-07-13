@@ -788,3 +788,31 @@ $navHeight: 5.2rem;
         }
     }
 }
+
+.meeting-banner {
+    position: fixed;
+    bottom: -5.27rem;
+    left: 0;
+    background: linear-gradient(90deg, rgba(183, 99, 207, 1) 0%, rgba(127, 69, 143, 1) 100%);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.6rem 4.8rem 1.6rem;
+    transition: bottom 300ms;
+
+    &.open {
+        bottom: 0;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 5.27rem;
+        cursor: pointer;
+        padding: 0 2.4rem;
+    }
+}
