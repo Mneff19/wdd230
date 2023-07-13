@@ -248,18 +248,58 @@ $navHeight: 5.2rem;
             .weather {
                 background-color: rgba(10, 9, 12, 0.6);
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 padding: 1.6rem 2.4rem;
                 margin-top: 8rem;
 
-                p {
-                    margin-top: 0;
-                    margin-bottom: 0;
+                .current {
+                    display: flex;
+
+                    p {
+                        font-weight: 600;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                    }
+
+                    .temp {
+                        font-weight: 600;
+                        margin-left: 0.8rem;
+                        margin-right: 0.8rem;
+                    }
                 }
 
-                .temp {
-                    margin-left: 0.8rem;
-                    margin-right: 0.8rem;
+                .forecast {
+                    .days {
+                        list-style-type: none;
+                        display: flex;
+                        text-align: center;
+                        margin: 2.4rem 0 0;
+                        padding: 0;
+                        gap: 5.6rem;
+
+                        .day {
+                            .info {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 0.8rem;
+
+                                .temp {
+                                    margin: 0 0.6rem 0 0;
+                                }
+
+                                .condition {
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .weekday {
+                            font-weight: 600;
+                            margin: 0;
+                        }
+                    }
                 }
             }
         }
@@ -746,5 +786,33 @@ $navHeight: 5.2rem;
                 text-decoration: none;
             }
         }
+    }
+}
+
+.meeting-banner {
+    position: fixed;
+    bottom: -5.27rem;
+    left: 0;
+    background: linear-gradient(90deg, rgba(183, 99, 207, 1) 0%, rgba(127, 69, 143, 1) 100%);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.6rem 4.8rem 1.6rem;
+    transition: bottom 300ms;
+
+    &.open {
+        bottom: 0;
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.6rem;
+        font-weight: 900;
+        line-height: 5.27rem;
+        cursor: pointer;
+        padding: 0 2.4rem;
     }
 }
